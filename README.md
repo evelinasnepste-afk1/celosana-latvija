@@ -1,138 +1,76 @@
-# Ceļošana pa Latviju
+# Ceļošana pa Latviju 🌍
 
-Šī ir tīmekļa vietne par ceļošanu Latvijā.
+## Projekta apraksts
 
-## Sadaļas:
-- Sākumlapa
-- Vietas
-- Fotogalerija
-- Kontakti
+Šī tīmekļa vietne ir izveidota kā mācību projekts, izmantojot HTML, CSS un JavaScript. Vietnes tēma ir ceļošana pa Latviju – tajā apkopota informācija par populārām vietām, pieejama fotogalerija un kontaktforma lietotājiem.
 
-## Funkcionalitāte:
-- Navigācijas izvēlne
-- Attēlu galerija
-- Forma ar validāciju
-- JavaScript interaktivitāte
+---
 
-## Tehnoloģijas:
-- HTML
-- CSS
-- JavaScript
+## 🖼️ Vietnes izskats
 
+### Sākumlapa
+
+![Sākumlapa](images/sakums.png)
+
+### Vietu sadaļa
+
+![Vietas](images/vietas.png)
+
+### Fotogalerija
+
+![Galerija](images/galerija.png)
+
+### Forma
+
+![Forma](images/forma.png)
+
+---
+
+## Vietnes struktūra
+
+* Sākumlapa
+* Vietas
+* Fotogalerija
+* Kontakti
+
+Navigācijas izvēlne ļauj ērti pārvietoties starp sadaļām.
+
+---
+
+## Izmantotās tehnoloģijas
+
+* HTML
+* CSS
+* JavaScript
+
+---
+
+## JavaScript funkcionalitāte
+
+* Formas validācija
+* Paziņojums par veiksmīgu nosūtīšanu
+* Attēlu palielināšana galerijā
+
+---
+
+## Dizains
+
+* Vienkāršs un pārskatāms izkārtojums
+* Hover efekti izvēlnē
+* Attēlu palielināšanas efekts
+
+---
+
+## Failu struktūra
 
 /projekts
-  index.html
-  /css
-    style.css
-  /js
-    script.js
-  /images
-    (bildes)
+│── index.html
+│── css/style.css
+│── js/script.js
+│── images/
 
-    <!DOCTYPE html>
-<html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <title>Ceļošana pa Latviju</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+---
 
-<header>
-    <h1>Ceļošana pa Latviju</h1>
-    <nav>
-        <a href="#sakums">Sākums</a>
-        <a href="#vietas">Vietas</a>
-        <a href="#galerija">Galerija</a>
-        <a href="#kontakti">Kontakti</a>
-    </nav>
-</header>
+## Secinājumi
 
-<section id="sakums">
-    <h2>Sveicināti!</h2>
-    <p>Šī vietne ir par skaistākajām vietām Latvijā.</p>
-</section>
-
-<section id="vietas">
-    <h2>Populāras vietas</h2>
-    <ul>
-        <li>Sigulda</li>
-        <li>Jūrmala</li>
-        <li>Kuldīga</li>
-    </ul>
-</section>
-
-<section id="galerija">
-    <h2>Fotogalerija</h2>
-    <img src="images/img1.jpg" onclick="palielinat(this)">
-    <img src="images/img2.jpg" onclick="palielinat(this)">
-    <img src="images/img3.jpg" onclick="palielinat(this)">
-</section>
-
-<section id="kontakti">
-    <h2>Pieteikšanās</h2>
-    <form onsubmit="return validateForm()">
-        <input type="text" id="name" placeholder="Vārds"><br>
-        <input type="email" id="email" placeholder="E-pasts"><br>
-        <textarea id="message" placeholder="Ziņa"></textarea><br>
-        <button type="submit">Sūtīt</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2026</p>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
-body {
-    font-family: Arial;
-    margin: 0;
-}
-
-header {
-    background: darkgreen;
-    color: white;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-}
-
-img {
-    width: 200px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-img:hover {
-    transform: scale(1.1);
-
-function validateForm() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-
-    if (name === "" || email === "") {
-        alert("Lūdzu aizpildi visus laukus!");
-        return false;
-    }
-
-    alert("Forma veiksmīgi nosūtīta!");
-    return true;
-}
-
-function palielinat(img) {
-    img.style.width = "400px";
-}
+Izveidoju funkcionālu tīmekļa vietni ar vairākām sadaļām, interaktivitāti un datu apstrādi, izmantojot JavaScript.
