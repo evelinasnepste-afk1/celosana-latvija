@@ -10,7 +10,29 @@
 
 ### Sākumlapa
 
-![Sākumlapa](images/sakums.png)
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sākums</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Ceļošana pa Latviju</h1>
+
+<nav>
+    <a href="index.html">Sākums</a>
+    <a href="vietas.html">Vietas</a>
+    <a href="galerija.html">Galerija</a>
+    <a href="kontakti.html">Kontakti</a>
+</nav>
+
+<p>Laipni lūdzam manā mājaslapā par ceļošanu Latvijā!</p>
+
+<script src="js/script.js"></script>
+</body>
+</html>
 
 ### Vietu sadaļa
 
