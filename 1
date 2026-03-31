@@ -5,3 +5,178 @@ projekts/
 │── js/
 │   └── script.js
 │── https://www.radio1.lv/userfiles/news/2021/06/091598cf220f86a57ebf8da546a25ea022.jpg/
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceļošana pa Latviju</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Ceļošana pa Latviju</h1>
+    <nav>
+        <ul>
+            <li><a href="#sakums">Sākums</a></li>
+            <li><a href="#par">Par</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#kontakti">Kontakti</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sakums">
+    <h2>Sākums</h2>
+    <p>Laipni lūdzam manā ceļošanas vietnē!</p>
+</section>
+
+<section id="par">
+    <h2>Par Latviju</h2>
+    <p>Latvija ir skaista valsts ar daudz dabas objektiem.</p>
+</section>
+
+<section id="galerija">
+    <h2>Galerija</h2>
+    <img src="images/img1.jpg" class="gallery-img">
+    <img src="images/img2.jpg" class="gallery-img">
+    <img src="images/img3.jpg" class="gallery-img">
+</section>
+
+<section id="kontakti">
+    <h2>Kontakti</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Vārds"><br>
+        <input type="email" id="email" placeholder="E-pasts"><br>
+        <textarea id="message" placeholder="Ziņa"></textarea><br>
+        <button type="submit">Sūtīt</button>
+    </form>
+
+    <p id="result"></p>
+</section>
+
+<footer>
+    <p>© 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery-img {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+form input, form textarea {
+    width: 200px;
+    margin: 5px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery-img {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+form input, form textarea {
+    width: 200px;
+    margin: 5px;
+}
+// Forma validācija
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if(name === "" || email === "") {
+        document.getElementById("result").innerText = "Lūdzu aizpildi visus laukus!";
+    } else {
+        document.getElementById("result").innerText = "Paldies! Ziņa nosūtīta.";
+    }
+});
+
+// Galerijas klikšķa efekts
+let images = document.querySelectorAll(".gallery-img");
+
+images.forEach(img => {
+    img.addEventListener("click", function() {
+        alert("Tu uzklikšķināji uz attēla!");
+    });
+});
