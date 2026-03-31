@@ -1,2 +1,20 @@
-# celosana-latvija
-Mājaslapa par ceļošanu Latvijā ar HTML, CSS un JavaScript. Iekļauta galerija, forma un interaktīvi elementi.
+# Ceļošana pa Latviju
+
+Šī ir tīmekļa vietne par ceļošanu Latvijā.
+
+## Sadaļas:
+- Sākumlapa
+- Vietas
+- Fotogalerija
+- Kontakti
+
+## Funkcionalitāte:
+- Navigācijas izvēlne
+- Attēlu galerija
+- Forma ar validāciju
+- JavaScript interaktivitāte
+
+## Tehnoloģijas:
+- HTML
+- CSS
+- JavaScript
